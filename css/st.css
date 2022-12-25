@@ -39,14 +39,11 @@ display: flex;
 flex-wrap: wrap;
 gap:var(--indent);
 }
+
+/* не смог подключить и не понял */
 .card-set-item {
-    flex-basis: calc(100% - (var(--indent)-1 / var(--indent)) );
+    flex-basis: calc(100% - (var(--indent)-1 * 30px/ var(--indent)) );
 }
-.list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
 
              /* Flexbox */
 
@@ -246,12 +243,14 @@ ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    
     width: 1200px;
    
 }
 .sect-gall-img {
     width: 370px;
     height: 404px;
+    background-color: #2196F3;
 }
 
 .section-skills h3 {
@@ -279,6 +278,7 @@ ul {
     width: 270px;
     height: 16px;
     margin-right: 10px;
+    
 }
 .skills-text {
     margin-top: 10px;
@@ -295,7 +295,7 @@ ul {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.03em;
     color:var(--body-color);
 }
@@ -374,7 +374,7 @@ margin-top: 10px;
     font-style:normal;
     padding-top: 94px;
 }
- .sect-gall-img .section-title{
+ .section-title{
     color:var(--body-color);
     font-family: 'Roboto';
     font-style: normal;
@@ -398,7 +398,8 @@ margin-top: 10px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
+    margin-top: 4px;
     margin-left: 24px;
     margin-right: 24px;
     margin-bottom: 20px;
@@ -409,22 +410,14 @@ margin-top: 10px;
     font-style:normal;
     background-color: var(--background-color);
     color:var(--body-color);
-    
+    width: 100%;
+    height: 252px;
     font-family: Raleway;
-    /* max-width: 1600px;
-    max-height: 600px; */
- }
- 
-.footer-container {
-    display: flex;
+    display:flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    
 }
+
 .footer-logo{
-    width: 135px;
-    height: 31px;
     font-family: Raleway;
     font-style: normal;
     font-weight: 700;
@@ -432,42 +425,30 @@ margin-top: 10px;
     line-height:1.19;
     letter-spacing: 0.03em;
     color:var(--body-color);
-    /* margin-left: 215px;
-    margin-top: 60px;
-    margin-right: 1240px;
-    margin-bottom: 20px; */
-}
- .footer-address {
-    display: flex;
-    flex-direction: column;
-    
 }
 .address-map {
+    color:var(--primary-white-color);
+}
+.address-map{
     color:var(--primary-white-color);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    width: 231px;
-    height: 21px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    /* margin-left: 215px;
-    margin-right: 1154px;
-    margin-bottom: 20px; */
 }
 .address-contact {
-    
     color: var(--color-contact);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    width: 231px;
-    height: 21px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    /* margin-right: 1154px;
-    margin-left: 215px;
-    margin-bottom: 60px; */
 }
+
+
+
+
+
