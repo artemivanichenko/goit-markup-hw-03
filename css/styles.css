@@ -30,7 +30,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    /* justify-content: center; */
 }
  
     /* Flex $ Gap  */
@@ -180,13 +179,13 @@ ul {
     color:var(--accent-color);
 }
                 /* main */
-   /* main */
+   
    .main-bg{
     background-color: var(--background-color);
-    padding-top: 80px;
+    /* padding-top: 80px; */
     text-align: center;
-    max-width: 1600px;
-    max-height: 600px;
+    width: 1600px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -206,10 +205,12 @@ ul {
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 200px;
 }
 .main-btn-nav .main-btn {
     display: flex;
-    gap: var(--indent);
+    
+    gap: 8px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -232,11 +233,12 @@ ul {
     border: 4px solid var(--button-color);
     background-color: var(--button-color);
     border-radius: 4px;
-    padding-top: 6px;
-    padding-left: 22px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-    /* margin: 30px auto 200px; */
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    margin: 30px auto 50px;
+    
    
 }
 .main-btn-style:hover,
@@ -248,10 +250,12 @@ ul {
 }
                 /* section */
 .section-gallery{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     margin-top: 50px;
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
    
 }
 .sect-gall-img {
@@ -294,7 +298,20 @@ ul {
 }
 
 
-.section-gallery h2{
+/* .section-gallery h2{
+    
+} */
+.work-gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.gallery-title {
+    /* width: 366px;
+    height: 42px; */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -303,13 +320,8 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--body-color);
-}
-.work-gallery{
-    display: flex;
-    gap: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
 }
 .img-gallery {
     display: flex;
@@ -369,6 +381,7 @@ margin-top: 10px;
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--second-color);
+    padding-bottom: 94px;
 }
 .section {
     color:var(--primary-white-color);
@@ -378,6 +391,7 @@ margin-top: 10px;
     line-height: 2;
     font-style:normal;
     padding-top: 94px;
+    
 }
  .sect-gall-img .section-title{
     color:var(--body-color);
